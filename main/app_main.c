@@ -22,6 +22,8 @@
 #include "mqtt_client.h"
 #include "driver/gpio.h"
 
+#include "driver/ledc.h"
+
 #include <wifi_provisioning/manager.h>
 
 #ifdef CONFIG_EXAMPLE_PROV_TRANSPORT_BLE
@@ -34,6 +36,43 @@
 #include "qrcode.h"
 
 static const char *TAG = "app";
+
+#define MAX_DUTY_CYCLE (1 << LEDC_TIMER_13_BIT) - 1  // For 13-bit resolution
+
+#define LEDC_DUTY_RES           LEDC_TIMER_13_BIT // Set duty resolution to 13 bits
+#define LEDC_DUTY               (4095) // Set duty to 50%. ((2 ** 13) - 1) * 50% = 4095
+#define LEDC_FREQUENCY          (50) // Frequency in Hertz. Set frequency at 5 kHz
+
+#define LEDC_TIMER              LEDC_TIMER_0
+#define LEDC_MODE               LEDC_LOW_SPEED_MODE
+#define LEDC_CHANNEL            LEDC_CHANNEL_0
+// mcpwm values
+// Please consult the datasheet of your servo before changing the following parameters
+#define SERVO_MIN_PULSEWIDTH_US 500  // Minimum pulse width in microsecond
+#define SERVO_MAX_PULSEWIDTH_US 2500  // Maximum pulse width in microsecond
+#define SERVO_MIN_DEGREE        0   // Minimum angle
+#define SERVO_MAX_DEGREE        180    // Maximum angle
+
+// arduino servo values
+// #define SERVO_MIN_PULSEWIDTH_US 5  // Minimum pulse width in microsecond
+// #define SERVO_MAX_PULSEWIDTH_US 25  // Maximum pulse width in microsecond
+// #define SERVO_MIN_DEGREE        0   // Minimum angle
+// #define SERVO_MAX_DEGREE        180    // Maximum angle
+
+#define SERVO_PULSE_GPIO             GPIO_NUM_3        // GPIO connects to the PWM signal line
+#define SERVO_TIMEBASE_RESOLUTION_HZ 1000000  // 1MHz, 1us per tick
+#define SERVO_TIMEBASE_PERIOD        20000    // 20000 ticks, 20ms
+
+static inline uint32_t angle_to_compare(int angle)
+{    
+    // duty=(map(angle,0,180,5,25))*5.1;
+    // For the mathematically inclined, here’s the whole function
+    // long map(long x, long in_min, long in_max, long out_min, long out_max) {
+    //  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+    //}
+    //5.1 is the ratio of pulse width (in decimilliseconds)to duty cycle at a fequency of 200Hz (the minimum for ledc on esp32c3)
+    return ((angle - SERVO_MIN_DEGREE) * (SERVO_MAX_PULSEWIDTH_US - SERVO_MIN_PULSEWIDTH_US) / (SERVO_MAX_DEGREE - SERVO_MIN_DEGREE) + SERVO_MIN_PULSEWIDTH_US)/5.1;
+}
 
 #if CONFIG_EXAMPLE_PROV_SECURITY_VERSION_2
 #if CONFIG_EXAMPLE_PROV_SEC2_DEV_MODE
@@ -88,6 +127,7 @@ extern const uint8_t mqtt_eclipseprojects_io_pem_start[]   asm("_binary_mqtt_ecl
 extern const uint8_t mqtt_eclipseprojects_io_pem_end[]   asm("_binary_mqtt_eclipseprojects_io_pem_end");
 // MQTT topics
 #define TOPIC_STATUS "device/status"
+#define TOPIC_SET_ANGLE "device/set_angle"
 #define TOPIC_GPIO_18 "device/gpio/18"
 #define TOPIC_GPIO_10 "device/gpio/10"
 #define TOPIC_GPIO_18_STATE "device/gpio/18/state"
@@ -211,11 +251,13 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
             // Subscribe to GPIO control topics
             esp_mqtt_client_subscribe(mqtt_client, TOPIC_GPIO_18, 0);
             esp_mqtt_client_subscribe(mqtt_client, TOPIC_GPIO_10, 0);
+            esp_mqtt_client_subscribe(mqtt_client, TOPIC_SET_ANGLE, 0);
             // Publish connected status
             esp_mqtt_client_publish(mqtt_client, TOPIC_STATUS, "connected", 0, 1, true);
             break;
             
         case MQTT_EVENT_DATA:
+            ESP_LOGI(TAG, "MQTT Data %s %d %s %d", event->topic, event->topic_len, event->data, event->data_len);
             if (strncmp(event->topic, TOPIC_GPIO_18, event->topic_len) == 0) {
                 int level = (event->data[0] == '1') ? 1 : 0;
                 gpio_set_level(GPIO_LED_18, level);
@@ -237,6 +279,14 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
                     handle_command(command);
                     free(command);
                 }
+            } else if (strncmp(event->topic, TOPIC_SET_ANGLE, event->topic_len) == 0) {
+                int angle =0;
+                sscanf(event->data, "%d", &angle);
+                ESP_LOGI(TAG, "Setting angle to %d", angle);
+                ledc_set_duty(LEDC_MODE, LEDC_CHANNEL, angle);
+                ledc_update_duty(LEDC_MODE, LEDC_CHANNEL);
+
+                vTaskDelay(pdMS_TO_TICKS(1000));
             }
             break;
             
@@ -505,12 +555,44 @@ static void wifi_prov_print_qr(const char *name, const char *username, const cha
 #endif /* CONFIG_APP_WIFI_PROV_SHOW_QR */
     ESP_LOGI(TAG, "If QR code is not visible, copy paste the below URL in a browser.\n%s?data=%s", QRCODE_BASE_URL, payload);
 }
+// Initialize and configure LEDC for a given GPIO pin and channel
+void ledc_initialize(int gpio_num, ledc_channel_t channel) {
+    ledc_timer_config_t ledc_timer = {
+        .duty_resolution = LEDC_DUTY_RES, 
+        .freq_hz = LEDC_FREQUENCY,                     
+        .speed_mode = LEDC_MODE,   
+        .timer_num = LEDC_TIMER            
+    };
+    ledc_timer_config(&ledc_timer);
+    
+    ledc_channel_config_t ledc_channel = {
+        .channel    = channel,
+        .duty       = 0,
+        .gpio_num   = gpio_num,
+        .speed_mode = LEDC_MODE,
+        .hpoint     = 0,
+        .timer_sel  = LEDC_TIMER
+    };
+    ledc_channel_config(&ledc_channel);
+    vTaskDelay(pdMS_TO_TICKS(200));
+    ledc_set_duty(LEDC_MODE,channel,angle_to_compare(0));
+    ledc_update_duty(LEDC_MODE,channel);
+    vTaskDelay(pdMS_TO_TICKS(200));
+    ESP_LOGI(TAG, "LEDC initialized");
+
+}
 
 void app_main(void)
 {
 
     // Initialize GPIO
     gpio_init();
+
+    // Initialize MCPWM
+    // mcpwm_init();
+    // Ledc Initialize
+    ledc_initialize(SERVO_PULSE_GPIO, LEDC_CHANNEL);
+
     /* Initialize NVS partition */
     esp_err_t ret = nvs_flash_init();
     if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
