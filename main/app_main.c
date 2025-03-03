@@ -128,15 +128,6 @@ extern const uint8_t mqtt_eclipseprojects_io_pem_end[]   asm("_binary_mqtt_eclip
 // MQTT topics
 #define TOPIC_STATUS "device/status"
 #define TOPIC_SET_ANGLE "device/set_angle"
-#define TOPIC_GPIO_18 "device/gpio/18"
-#define TOPIC_GPIO_10 "device/gpio/10"
-#define TOPIC_GPIO_18_STATE "device/gpio/18/state"
-#define TOPIC_GPIO_10_STATE "device/gpio/10/state"
-#define TOPIC_GPIO_10_STATE_GET "device/gpio/10/state_get"
-#define TOPIC_GPIO_18_STATE_GET "device/gpio/18/state_get"
-
-#define TOPIC_STATE "state"
-#define TOPIC_COMMAND "command"
 
 static esp_mqtt_client_handle_t mqtt_client = NULL;
 
@@ -249,8 +240,6 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
         case MQTT_EVENT_CONNECTED:
             ESP_LOGI(TAG, "MQTT Connected");
             // Subscribe to GPIO control topics
-            esp_mqtt_client_subscribe(mqtt_client, TOPIC_GPIO_18, 0);
-            esp_mqtt_client_subscribe(mqtt_client, TOPIC_GPIO_10, 0);
             esp_mqtt_client_subscribe(mqtt_client, TOPIC_SET_ANGLE, 0);
             // Publish connected status
             esp_mqtt_client_publish(mqtt_client, TOPIC_STATUS, "connected", 0, 1, true);
@@ -258,28 +247,7 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
             
         case MQTT_EVENT_DATA:
             ESP_LOGI(TAG, "MQTT Data %s %d %s %d", event->topic, event->topic_len, event->data, event->data_len);
-            if (strncmp(event->topic, TOPIC_GPIO_18, event->topic_len) == 0) {
-                int level = (event->data[0] == '1') ? 1 : 0;
-                gpio_set_level(GPIO_LED_18, level);
-                publish_gpio_state(GPIO_LED_18);
-            } else if (strncmp(event->topic, TOPIC_GPIO_10, event->topic_len) == 0) {
-                int level = (event->data[0] == '1') ? 1 : 0;
-                gpio_set_level(GPIO_LED_10, level);
-                publish_gpio_state(GPIO_LED_10);
-            } else if (strncmp(event->topic, TOPIC_GPIO_10_STATE_GET, event->topic_len) == 0){
-                publish_gpio_state(GPIO_LED_10);
-            } else if (strncmp(event->topic, TOPIC_GPIO_18_STATE_GET, event->topic_len) == 0){
-                publish_gpio_state(GPIO_LED_18);
-            } else if (strncmp(event->topic, TOPIC_COMMAND, event->topic_len) == 0) {
-                // Null-terminate the received command
-                char *command = malloc(event->data_len + 1);
-                if (command != NULL) {
-                    memcpy(command, event->data, event->data_len);
-                    command[event->data_len] = '\0';
-                    handle_command(command);
-                    free(command);
-                }
-            } else if (strncmp(event->topic, TOPIC_SET_ANGLE, event->topic_len) == 0) {
+           if (strncmp(event->topic, TOPIC_SET_ANGLE, event->topic_len) == 0) {
                 int angle =0;
                 sscanf(event->data, "%d", &angle);
                 ESP_LOGI(TAG, "Setting angle to %d", angle);
