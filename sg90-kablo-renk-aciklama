@@ -1,0 +1,1955 @@
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'html' -->
+<!-- FILE NAME SUGGESTIONS:
+   * html--node--51.html.twig
+   * html--node--%.html.twig
+   * html--node.html.twig
+   x html.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/page/html.html.twig' -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head> 
+    <meta charset="utf-8" />
+<meta name="title" content="Servo Motor SG-90 Basics, Pinout, Wire Description, Datasheet, and Working" />
+<meta property="og:site_name" content="Components101" />
+<meta name="description" content="Learn about Servo motor SG90, its basics and how to use a servo motor with its pin diagram, description and datasheet." />
+<meta name="abstract" content="Servo motor Pinout and Datasheet" />
+<meta name="keywords" content="sg90 servo motor, sg90 servo motor datasheet, servo motor pinout, servo motor wires, servo motor wire diagram, servo motor working, servo motor basics, how to choose servo motor, servo motor dimensions, servo motor datasheet, Electronics Components" />
+<meta property="og:title" content="Servo Motor SG-90" />
+<meta property="og:description" content="Servo Motor SG-90" />
+<meta property="og:image" content="https://components101.com/sites/default/files/components/Servo-Motor.jpg" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/sites/default/files/componentfavicon_32.png" type="image/png" />
+<link rel="canonical" href="https://components101.com/motors/servo-motor-basics-pinout-datasheet" />
+<link rel="shortlink" href="https://components101.com/node/51" />
+
+    
+    <title>Servo Motor SG-90 Basics, Pinout, Wire Description, Datasheet, and Working</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_M55dpUdsBopMAk1It3M-mbSsgcHSfziFWmrqpDVdkWg.css?sobhww" />
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Montserrat:400,500,700" />
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Open+Sans:400,500,700" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_MPkB5-v0CMxFQIpswTzMNxMo5xAbeo8BXsLILWHABgs.css?sobhww" />
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/51","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"statistics":{"data":{"nid":"51"},"url":"\/core\/modules\/statistics\/statistics.php"},"gavias_blockbuilder":{"url_edit":"\/admin\/structure\/gavias_blockbuilder\/edit\/-----"},"ajaxTrustedUrl":{"\/search\/node":true},"layzy_load":"on","gavias_load_ajax_view":"\/custom\/gavias_hook\/ajax_view","user":{"uid":0,"permissionsHash":"098d2cb77f8ea881a607466b769ba5ec671ead1c1012234492e015cec6a7fb99"}}</script>
+
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+<script src="/sites/default/files/js/js_X5Yck_VxIbmMnc1L1TSAujHLGbaPsUVdzlx1XvevOMI.js"></script>
+
+
+    <link rel="stylesheet" href="https://components101.com/themes/gavias_kama/css/custom.css" media="screen" />
+    <link rel="stylesheet" href="https://components101.com/themes/gavias_kama/css/update.css" media="screen" /><style class="customize"> .main-menu, ul.gva_menu{background: #c62020;} .main-menu ul.gva_menu > li > a{color: #ffffff;} .main-menu ul.gva_menu > li > a:hover{color: #e3e3e3;}#footer .footer-center{color: #ababab;}#footer .footer-center ul.menu > li a::after, .footer a{color: #999191;} .copyright{color: #8c8c8c !important;}.copyright a{color: $customize['copyright_color_link'] ?>!important;}</style> 
+	 
+	 <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-105698825-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-105698825-1');
+</script>
+
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/21034905/Components101_leaderboard', [728, 90], 'div-gpt-ad-1555342001530-0').addService(googletag.pubads());
+	googletag.defineSlot('/21805061584/CA_CircuitDigest', [300, 250], 'div-gpt-ad-1561528735888-0').addService(googletag.pubads());
+	googletag.defineSlot('/21034905/components101_billboard', [970, 250], 'div-gpt-ad-1577888984385-0').addService(googletag.pubads());
+	googletag.defineSlot('/21034905/Billboard', [970, 250], 'div-gpt-ad-1522423126716-0').addService(googletag.pubads());
+	googletag.defineSlot('/21034905/components101_track_1', [1, 1], 'div-gpt-ad-1577889031982-0').addService(googletag.pubads());
+	googletag.defineSlot('/21034905/components101_welcome_banner', [640, 480], 'div-gpt-ad-1622010760286-0').addService(googletag.pubads());
+	googletag.defineSlot('/21034905/Welcome_Ad2', [640, 480], 'div-gpt-ad-1508834807558-1').addService(googletag.pubads());
+	googletag.defineSlot('/21034905/Welcome_Ad3', [640, 480], 'div-gpt-ad-1632744355244-0').addService(googletag.pubads());
+	googletag.defineSlot('/21034905/c101_wallpaper_banner_left', [120, 600], 'div-gpt-ad-1625818497950-0').addService(googletag.pubads());
+	googletag.defineSlot('/21034905/c101_wallpaper_banner_right', [120, 600], 'div-gpt-ad-1625818544655-0').addService(googletag.pubads());
+	googletag.defineSlot('/21034905/c101_wallpaper_banner_left_2', [120, 600], 'div-gpt-ad-1640869785778-0').addService(googletag.pubads());
+	googletag.defineSlot('/21034905/c101_wallpaper_banner_right_2', [120, 600], 'div-gpt-ad-1640869848371-0').addService(googletag.pubads());
+	googletag.defineSlot('/21034905/c101_billboard_bottom', [970, 250], 'div-gpt-ad-1627302449723-0').addService(googletag.pubads());
+  googletag.defineSlot('/21034905/Components101_Boombox', [300, 250], 'div-gpt-ad-1704372374947-0').addService(googletag.pubads());
+  //googletag.defineSlot('/21034905/C101_partstack_trackingpixel', [1, 1], 'div-gpt-ad-1704784866813-0').addService(googletag.pubads());
+  googletag.defineSlot('/21034905/billboard_3', [970, 250], 'div-gpt-ad-1721987993455-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+
+<script> window._peq = window._peq || []; window._peq.push(["init"]); </script>
+<script src="https://clientcdn.pushengage.com/core/b31cf866f50005584b4fd935539a00da.js" async></script>
+
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="300">
+<meta property="og:image:height" content="300">
+
+<script src="https://di.oemsecrets.com/js/distributor-inventory_0.2.7.min.js"></script>
+<link href="https://di.oemsecrets.com/css/distributor-inventory_0.0.4.min.css" rel="stylesheet">
+
+  </head>  <body class="layout-no-sidebars not-preloader boxed path-node node--type-blog-post">
+    <a href="#main-content" class="visually-hidden focusable">Skip to main content
+    </a>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+<div id="myModalwel" class="modal fade" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="display:none">
+              <div class="blocksss">
+                <h5 class="modal-title">Continue to site >>></h5>
+              </div>
+            </div>
+            <div class="modal-body">
+    <!-- /21034905/components101_welcome_banner -->
+     <div id='div-gpt-ad-1622010760286-0' style='min-width: 640px; min-height: 480px;'>
+      <script>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1622010760286-0'); });
+      </script>
+    </div> 
+                 <!-- <img src="adsimage.png" class="img-responsive"> -->
+            </div>
+        </div>
+      </div>
+    </div>
+	</div>
+			  <!-- /21034905/c101_wallpaper_banner_left_2 -->
+	<div id='div-gpt-ad-1640869785778-0' style='min-width: 120px; min-height: 600px; position: fixed;  right: 55.5%; margin: 0 540px 0 0; z-index: 99'>
+	  <script>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1640869785778-0'); });
+	  </script>
+	</div>
+	
+		 <!--/21034905/c101_wallpaper_banner_right_2 -->
+	<div id='div-gpt-ad-1640869848371-0' style='min-width: 120px; min-height: 600px;position: fixed;   margin: 0 0 0 540px; left: 55.5%; z-index: 99'>
+	  <script>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1640869848371-0'); });
+	  </script>
+	</div>
+ 
+ 
+	
+
+
+
+<style type="text/css">
+
+
+</style>
+<script type="text/javascript">
+  if(document.documentElement.clientWidth > 700){
+var time = 1;
+setTimeout(function(){
+
+if(document.getElementById('div-gpt-ad-1622010760286-0').style['display']!='none' && $('#myModalwel').find('img') && $('#div-gpt-ad-1622010760286-0').attr('data-google-query-id')){
+$('.modal-header').show();
+$('#myModalwel').modal("show");
+console.log("Hello world!");
+  }
+}, 3000);
+
+    $('.modal-header').click(function(){
+       $(".modal").remove();
+  $('.modal').modal('hide');
+  $('body').removeClass('modal-open');
+       $(".modal-backdrop" ).remove();
+
+    });
+ }
+
+</script>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'off_canvas_page_wrapper' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/off-canvas-page-wrapper.html.twig' -->
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'page' -->
+<!-- FILE NAME SUGGESTIONS:
+   * page--node--51.html.twig
+   * page--node--%.html.twig
+   * page--node--blog-post.html.twig
+   * page--node.html.twig
+   x page.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/page/page.html.twig' -->
+<div class="body-page">  <script type="text/javascript">
+jQuery(document).ready(function(){
+    var a = jQuery('.layout-no-sidebars').removeClass('boxed');
+    if(a) {
+      var main = jQuery('.main').addClass("boxed");
+    //  jQuery('.main').css("background-color","gray");
+    }
+});
+</script>
+<header id="header" class="header-v3"><div class="topbar">
+  <div class="container">
+    <div class="row">
+      
+      <div class="topbar-left col-sm-6 col-xs-12 hidden-xs">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--topbar.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+  <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--gavias-kama-mobilemenutopmenu.html.twig
+   * block--system-menu-block--mobile-menu---top-menu.html.twig
+   x block--system-menu-block.html.twig
+   * block--system.html.twig
+   * block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block--system-menu-block.html.twig' -->
+<nav role="navigation" aria-labelledby="-menu" class="block block-menu navigation menu--mobile-menu---top-menu">
+  <h2 class="visually-hidden block-title" id="-menu"><span>Top menu</span></h2>
+  <div class="block-content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'menu__mobile_menu___top_menu' -->
+<!-- FILE NAME SUGGESTIONS:
+   * menu--mobile-menu---top-menu.html.twig
+   * menu--mobile-menu-.html.twig
+   x menu.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/navigation/menu.html.twig' -->
+      <ul class="gva_menu">      <li class="menu-item"><a href="/about-us" data-drupal-link-system-path="node/117">About Us</a>
+      </li>      <li class="menu-item"><a href="/contact" data-drupal-link-system-path="contact">Contact</a>
+      </li>    </ul>
+<!-- END OUTPUT from 'themes/gavias_kama/templates/navigation/menu.html.twig' -->
+
+   </div>  
+</nav>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block--system-menu-block.html.twig' -->
+
+
+  </div>
+<!-- END OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+      </div>
+
+      <div class="topbar-right col-sm-6 col-xs-12">
+        <div class="social-list">            <a href="https://www.facebook.com/electronicscomponents101" rel="nofollow" target="_blank"><i class="fa fa-facebook"></i></a>            <a href="https://twitter.com/components101" rel="nofollow" target="_blank"><i class="fa fa-twitter-square"></i></a>            <a href="https://pinterest.com/components101" rel="nofollow" target="_blank"><i class="fa fa-pinterest"></i></a>  
+        </div>  
+      </div>
+    </div>
+  </div>  
+</div>
+
+    <div class="header-bottomgv-sticky-menu">
+      <div class="main-menu">
+        <div class="container">
+           <div class="row">
+              <div class="col-lg-2 col-md-2 col-xs-5">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--branding.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+  <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--gavias-kama-branding.html.twig
+   x block--system-branding-block.html.twig
+   * block--system.html.twig
+   * block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block--system-branding-block.html.twig' -->
+<div class="clearfix site-branding block block-system block-system-branding-block no-title">    <a href="/" title="Home" rel="home" class="site-branding-logo">  
+        <img src="/sites/default/files/components101_logo_2.png" alt="Home" />  
+    </a></div>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block--system-branding-block.html.twig' -->
+
+
+  </div>
+<!-- END OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+    
+              </div>
+              <div class="col-lg-10 col-md-10 col-xs-7 area-main-menu">
+                <div class="area-inner menu-hover">
+                  <div class="gva-offcanvas-inner">
+                    <div class="close-offcanvas hidden-lg hidden-md"><a><i class="fa fa-times"></i></a></div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--main-menu.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+  <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--gavias-kama-mainnavigation.html.twig
+   * block--system-menu-block--main.html.twig
+   x block--system-menu-block.html.twig
+   * block--system.html.twig
+   * block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block--system-menu-block.html.twig' -->
+<nav role="navigation" aria-labelledby="-menu" class="block block-menu navigation menu--main">
+  <h2 class="visually-hidden block-title" id="-menu"><span>Main navigation</span></h2>
+  <div class="block-content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'menu__main' -->
+<!-- FILE NAME SUGGESTIONS:
+   x menu--main.html.twig
+   x menu--main.html.twig
+   * menu.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/navigation/menu--main.html.twig' -->
+
+<div class="gva-navigation">      <ul class="clearfix gva_menu gva_menu_main">      <li class="menu-item">
+        <a href="/latest-news">New Products  
+        </a>      </li>      <li class="menu-item">
+        <a href="/articles">Design Tips  
+        </a>      </li>      <li class="menu-item menu-item--expanded  gva-mega-menu megamenu menu-grid menu-columns-4">
+        <a href="">PCBWay            <span class="icaret nav-plus nav-minus fa fa-angle-down"></span>  
+        </a>      <ul class="menu sub-menu">      <li class="menu-item">
+        <a href="https://bit.ly/3YohMjJ">PCB Instant Quote  
+        </a>      </li>      <li class="menu-item">
+        <a href="https://bit.ly/4e4QMLS">Quick Order Online  
+        </a>      </li>      <li class="menu-item">
+        <a href="https://bit.ly/3NKDbyy">$29 Assembly Order  
+        </a>      </li>      <li class="menu-item">
+        <a href="https://bit.ly/4fqBT7X">Pick Up a Module  
+        </a>      </li>      <li class="menu-item">
+        <a href="https://bit.ly/48sTYQb">CNC|3D Printing prototype  
+        </a>      </li>      <li class="menu-item">
+        <a href="https://bit.ly/3C4a1ba">Make a Stencil  
+        </a>      </li>      <li class="menu-item">
+        <a href="https://bit.ly/3NGGqXZ">How to design a PCB?  
+        </a>      </li>      <li class="menu-item">
+        <a href="https://bit.ly/4hsrgmT">Electronic Design | OEM  
+        </a>      </li>      <li class="menu-item">
+        <a href="https://bit.ly/3A7o3Z9">Free Gerber Viewer  
+        </a>      </li>      <li class="menu-item">
+        <a href="https://bit.ly/3UQa3tZ">Shared Projects Library  
+        </a>      </li>      <li class="menu-item">
+        <a href="https://bit.ly/3YHoF0U">PCBWay PCB Capabilities  
+        </a>      </li>      <li class="menu-item">
+        <a href="https://bit.ly/4fmIHDh">Ask for Sponsorship  
+        </a>      </li>      <li class="menu-item">
+        <a href="https://bit.ly/48sNqRy">Latest News  
+        </a>      </li>      <li class="menu-item">
+        <a href="https://bit.ly/48oHsBq">Advanced PCB Service  
+        </a>      </li>      <li class="menu-item">
+        <a href="https://bit.ly/4hlz3ml">7th Project Design Contest  
+        </a>      </li>      <li class="menu-item">
+        <a href="https://bit.ly/48oxPm2">How do you like PCBWay?  
+        </a>      </li>    </ul>      </li>      <li class="menu-item menu-item--expanded">
+        <a href="/ics">ICs            <span class="icaret nav-plus nav-minus fa fa-angle-down"></span>  
+        </a>      <ul class="menu sub-menu">      <li class="menu-item">
+        <a href="https://components101.com/power-ics">Power ICs  
+        </a>      </li>      <li class="menu-item">
+        <a href="https://components101.com/analog-ics">Analog ICs  
+        </a>      </li>      <li class="menu-item">
+        <a href="https://components101.com/digital-ics">Digital ICs  
+        </a>      </li>    </ul>      </li>      <li class="menu-item menu-item--expanded">
+        <a href="">Passive            <span class="icaret nav-plus nav-minus fa fa-angle-down"></span>  
+        </a>      <ul class="menu sub-menu">      <li class="menu-item">
+        <a href="/capacitors">Capacitors  
+        </a>      </li>      <li class="menu-item">
+        <a href="/diodes">Diodes  
+        </a>      </li>      <li class="menu-item">
+        <a href="/resistors">Resistors  
+        </a>      </li>      <li class="menu-item">
+        <a href="https://components101.com/inductors">Inductors  
+        </a>      </li>      <li class="menu-item">
+        <a href="/switches">Switches  
+        </a>      </li>      <li class="menu-item">
+        <a href="/transformers">Transformers  
+        </a>      </li>    </ul>      </li>      <li class="menu-item menu-item--expanded">
+        <a href="">Power            <span class="icaret nav-plus nav-minus fa fa-angle-down"></span>  
+        </a>      <ul class="menu sub-menu">      <li class="menu-item">
+        <a href="https://components101.com/transistors">Transistors  
+        </a>      </li>      <li class="menu-item">
+        <a href="/igbt">IGBT  
+        </a>      </li>      <li class="menu-item">
+        <a href="/mosfets">MOSFET  
+        </a>      </li>      <li class="menu-item">
+        <a href="/triacs">TRIAC  
+        </a>      </li>      <li class="menu-item">
+        <a href="/optocouplers">Optocouplers  
+        </a>      </li>      <li class="menu-item">
+        <a href="/regulators">Regulators  
+        </a>      </li>      <li class="menu-item">
+        <a href="https://components101.com/power-ics">Power ICs &amp; Modules  
+        </a>      </li>    </ul>      </li>      <li class="menu-item menu-item--expanded">
+        <a href="">Embedded            <span class="icaret nav-plus nav-minus fa fa-angle-down"></span>  
+        </a>      <ul class="menu sub-menu">      <li class="menu-item">
+        <a href="/development-boards">Development Boards  
+        </a>      </li>      <li class="menu-item">
+        <a href="/microcontrollers">Microcontrollers  
+        </a>      </li>      <li class="menu-item">
+        <a href="/sensors">Sensors  
+        </a>      </li>      <li class="menu-item">
+        <a href="/displays">Displays  
+        </a>      </li>      <li class="menu-item">
+        <a href="/wireless">Wireless  
+        </a>      </li>    </ul>      </li>      <li class="menu-item menu-item--expanded">
+        <a href="">Actuators            <span class="icaret nav-plus nav-minus fa fa-angle-down"></span>  
+        </a>      <ul class="menu sub-menu">      <li class="menu-item">
+        <a href="/motors">Motors  
+        </a>      </li>    </ul>      </li>      <li class="menu-item menu-item--expanded ">
+        <a href="">More            <span class="icaret nav-plus nav-minus fa fa-angle-down"></span>  
+        </a>      <ul class="menu sub-menu">      <li class="menu-item">
+        <a href="/connectors">Connectors  
+        </a>      </li>      <li class="menu-item">
+        <a href="/modules2">Modules  
+        </a>      </li>      <li class="menu-item">
+        <a href="/batteries">Batteries  
+        </a>      </li>      <li class="menu-item">
+        <a href="/cables">Cables  
+        </a>      </li>      <li class="menu-item">
+        <a href="/misc">Misc.  
+        </a>      </li>    </ul>      </li>    </ul></div>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/navigation/menu--main.html.twig' -->
+
+   </div>  
+</nav>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block--system-menu-block.html.twig' -->
+
+
+  </div>
+<!-- END OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+                  </div>
+                  
+                  <div id="menu-bar" class="menu-bar mobile hidden-lg hidden-md">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                    <span class="three"></span>
+                  </div>                    <div class="menu-another hidden-xs hidden-sm">
+                      <div id="menu-bar-another" class="menu-bar">
+                        <span class="fa fa-user" style="color: #595959; margin-top: 8px; height: 0px;"></span>
+					<span class="one" style="display: none;"></span>
+                    <span class="two" style="display: none;"></span>
+                    <span class="three" style="display: none;"></span>
+                      </div>
+                      <div class="content-inner">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--menu-another.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+  <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--gavias-kama-account-menu.html.twig
+   * block--system-menu-block--account.html.twig
+   x block--system-menu-block.html.twig
+   * block--system.html.twig
+   * block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block--system-menu-block.html.twig' -->
+<nav role="navigation" aria-labelledby="block-gavias-kama-account-menu-menu" id="block-gavias-kama-account-menu" class="block block-menu navigation menu--account">
+  <h2 class="visually-hidden block-title" id="block-gavias-kama-account-menu-menu"><span>User account menu</span></h2>
+  <div class="block-content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'menu__account' -->
+<!-- FILE NAME SUGGESTIONS:
+   * menu--account.html.twig
+   x menu.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/navigation/menu.html.twig' -->
+      <ul class="gva_menu">      <li class="menu-item"><a href="/user/login" data-drupal-link-system-path="user/login">Log in</a>
+      </li>      <li class="menu-item"><a href="/user/register" data-drupal-link-system-path="user/register">Register</a>
+      </li>    </ul>
+<!-- END OUTPUT from 'themes/gavias_kama/templates/navigation/menu.html.twig' -->
+
+   </div>  
+</nav>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block--system-menu-block.html.twig' -->
+
+
+  </div>
+<!-- END OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+
+                      </div>
+                    </div>                    <div class="gva-search-region search-region">
+                      <span class="icon"><i class="fa fa-search"></i></span>
+                      <div class="search-content">
+                        <a class="close"><i class="fa fa-times"></i></a> 
+                        <div class="content-inner">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--search.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+  <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--searchform-2.html.twig
+   x block--search-form-block.html.twig
+   * block--search.html.twig
+   * block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block--search-form-block.html.twig' -->
+<div class="search-block-form block block-search container-inline" data-drupal-selector="search-block-form" role="search">  <div class="content container-inline">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'form' -->
+<!-- FILE NAME SUGGESTIONS:
+   x form--search-block-form.html.twig
+   * form.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/form--search-block-form.html.twig' -->
+<form action="/search/node" method="get" id="search-block-form" accept-charset="UTF-8" class="search-form search-block-form">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'form_element' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/form-element.html.twig' -->
+<div class="js-form-item form-item js-form-type-search form-item-keys js-form-item-keys form-no-label">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'form_element_label' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/form-element-label.html.twig' -->
+<label for="edit-keys" class="visually-hidden">Search</label>
+<!-- END OUTPUT from 'core/modules/system/templates/form-element-label.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'input__search' -->
+<!-- FILE NAME SUGGESTIONS:
+   * input--search.html.twig
+   x input.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/input.html.twig' -->
+<input title="Enter the terms you wish to search for." data-drupal-selector="edit-keys" type="search" id="edit-keys" name="keys" value="" size="15" maxlength="128" class="form-search" />
+
+<!-- END OUTPUT from 'core/modules/system/templates/input.html.twig' -->
+
+</div>
+
+<!-- END OUTPUT from 'core/modules/system/templates/form-element.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'container' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/container.html.twig' -->
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'input__submit' -->
+<!-- FILE NAME SUGGESTIONS:
+   * input--submit.html.twig
+   x input.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/input.html.twig' -->
+<input class="search-form__submit button js-form-submit form-submit" data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Search" />
+
+<!-- END OUTPUT from 'core/modules/system/templates/input.html.twig' -->
+
+</div>
+
+<!-- END OUTPUT from 'core/modules/system/templates/container.html.twig' -->
+
+
+</form>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/form--search-block-form.html.twig' -->
+
+
+  </div></div>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block--search-form-block.html.twig' -->
+
+
+  </div>
+<!-- END OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+
+                        </div>
+                      </div>  
+                    </div>                  
+                </div>   
+              </div>
+           </div>
+        </div>
+      </div>
+    </div>
+   
+</header>
+
+<div class="ad970-wrapper" style ="background-color: #fff; padding-top: 20px; padding-bottom: 20px;"> 
+<!-- /21034905/components101_billboard -->
+<div id='div-gpt-ad-1577888984385-0' style='width: 970px; height: 250px; margin-left: auto; margin-right: auto;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1577888984385-0'); });
+  </script>
+</div>
+</div>
+
+  <div class="help show">
+    <div class="container">
+      <div class="control-panel"><i class="fa fa-cogs"></i></div>
+      <div class="content-inner">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--help.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+<!-- END OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+
+      </div>
+    </div>
+  </div>
+<div class="clearfix"></div>
+<div class="clearfix"></div>
+
+	<div role="main" class="main main-page">	
+		<div id="content" class="content content-full">
+			<div class="container">
+<div class="content-main-inner">
+	<div class="row"> 
+
+		<div id="page-main-content" class="main-contentcol-xs-12 col-md-8 sb-r ">
+
+			<div class="main-content-inner">					<div class="content-main">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--content.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+  <div><div data-drupal-messages-fallback class="hidden"></div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--gavias-kama-content.html.twig
+   * block--system-main-block.html.twig
+   * block--system.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+<div id="block-gavias-kama-content" class="block block-system block-system-main-block no-title">    <div class="content block-content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'node' -->
+<!-- FILE NAME SUGGESTIONS:
+   * node--51--full.html.twig
+   * node--51.html.twig
+   * node--blog-post--full.html.twig
+   * node--blog-post.html.twig
+   * node--full.html.twig
+   * node.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/node/node--blog_post.html.twig' -->
+
+<!-- Start Display article for teaser page --><!-- Start Display article for detail page -->
+
+<article data-history-node-id="51" role="article" about="/motors/servo-motor-basics-pinout-datasheet" class="node node-detail node--type-blog-post node--view-mode-full clearfix">
+  <div class="post-block article-detail">
+      
+    <div class="post-thumbnail post-">  
+    </div>
+
+    <div class="post-content">
+      <div></div>
+           <h1 class="post-title">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--node--title--blog-post.html.twig
+   x field--node--title.html.twig
+   * field--node--blog-post.html.twig
+   * field--title.html.twig
+   * field--string.html.twig
+   * field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/node/templates/field--node--title.html.twig' -->
+<span>Servo Motor SG-90</span>
+
+<!-- END OUTPUT from 'core/modules/node/templates/field--node--title.html.twig' -->
+
+</h1>         
+<div class="post-meta margin-bottom-20">
+<span class="post-created">18 September 2017</span><span class="space">&nbsp;-&nbsp;</span><span class="post-comment">0 Comments</span>
+<a data-sumome-share-id=7dbd74c8-5c20-4320-bea6-009c92c015fd></a>
+</div>
+	  
+	      <div class="gallery-wrap">
+    <div id="bk-gallery-slider" class="flexslider">
+      <ul class="slides" style="display:inline-flex; padding-left:0px; margin-left:0px;" >
+	  
+   <ul style="border-right: 3px solid #EDEEE9;padding-left:0px; margin-left:0px;">			 <a href="/sites/default/files/components/Servo-Motor.jpg" class="colorbox cboxElement" data-colorbox-gallery="gallery-beforeafter" title="SG90 Servo Motor" data-source="/sites/default/files/components/Servo-Motor.jpg" target="_blank"> <img width="390px" src="/sites/default/files/components/Servo-Motor.jpg" class="" alt="Servo Motor SG90" /></a>
+      </ul>
+              <ul>			 <a class="colorbox cboxElement" data-colorbox-gallery="gallery-beforeafter" title="Servo Motor Pinout (Wires)" data-source="/sites/default/files/component_pin/Servo-Motor-Wires.png" href="/sites/default/files/component_pin/Servo-Motor-Wires.png" target="_blank"><img width="390px" src="/sites/default/files/component_pin/Servo-Motor-Wires.png" class="" alt="Servo Motor Pinout (Wires)" /></a>
+      </ul>
+       </ul>
+	  <ul class="slides" style="display:inline-flex;">
+	  <ul style = "width: 398px; height: 40px; background-color: #EDEEE9; padding-top:8px; margin-left: -35px;">
+	  			<center><b>SG90 Servo Motor</b></center>
+
+	  </ul>
+	  <ul style = "width: 398px; height: 40px; background-color: #EDEEE9; padding-top:8px; margin-left: -35px;">
+	  			<center> <b>Servo Motor Pinout (Wires) </b></center>
+
+	  </ul>
+	  </ul>
+	</div>
+	</div>
+<!--	<p style = "font-size: 10px;">[Click the image to enlarge it]</p> -->	
+      <div class="node__content clearfix"><h3><strong>Servo Motor Wire </strong><strong>Configuration</strong></h3>
+
+<div>
+<table>
+	<tbody>
+		<tr>
+			<td>
+			<p><span><strong>Wire Number</strong></span></p>
+			</td>
+			<td>
+			<p><span><strong>Wire Colour</strong></span></p>
+			</td>
+			<td>
+			<p><span><strong>Description</strong></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><span>1</span></p>
+			</td>
+			<td>
+			<p><span>Brown</span></p>
+			</td>
+			<td>
+			<p><span>Ground wire connected to the ground of system</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><span>2</span></p>
+			</td>
+			<td>
+			<p><span>Red</span></p>
+			</td>
+			<td>
+			<p><span>Powers the motor typically +5V is used</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><span>3</span></p>
+			</td>
+			<td>
+			<p><span>Orange</span></p>
+			</td>
+			<td>
+			<p><span>PWM signal is given in through this wire to drive the motor</span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<p>&nbsp;</p>
+
+<h3><strong>TowerPro SG-90 Features</strong></h3>
+
+<ul>
+	<li>Operating Voltage is +5V typically</li>
+	<li>Torque: 2.5kg/cm</li>
+	<li>Operating speed is 0.1s/60°</li>
+	<li>Gear Type: Plastic</li>
+	<li>Rotation : 0°-180°</li>
+	<li>Weight of motor : 9gm</li>
+	<li>Package includes gear horns and screws</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h3><strong>SG-90 Servo Motor Equivalent</strong></h3>
+
+<p><a href="https://components101.com/motors/mg90s-metal-gear-servo-motor">MG90S</a> Metal Gear, <a href="https://components101.com/motors/mg995-servo-motor">MG995</a> High Torque Metal Gear, VTS-08A Analog Servo</p>
+
+<p>&nbsp;</p>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Components101_Boombox_Bottom -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-4104019148699772"
+     data-ad-slot="6274162917"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><h3><strong>Selecting your Servo Motor</strong></h3>
+
+<p>There are lots of <a href="https://components101.com/tags/servo-motor">servo motors</a> available in the market and each one has its own speciality and applications. The following two paragraphs will help you identify the right type of servo motor for your project/system.</p>
+
+<p>Most of the hobby Servo motors operates from 4.8V to 6.5V, the higher the voltage higher the torque we can achieve, but most commonly they are operated at +5V. &nbsp;Almost all hobby servo motors can rotate only from 0° to 180° due to their gear arrangement so make sure you project can live with the half circle if no, you can prefer for a 0° to 360° motor or modify the motor to make a full circle. The gears in the motors are easily subjected to wear and tear, so if your application requires stronger and long running motors you can go with metal gears or just stick with normal plastic gear.</p>
+
+<p>Next comes the most important parameter, which is the <strong>torque</strong> at which the motor operates. Again there are many choices here but the commonly available one is the 2.5kg/cm torque which comes with the Towerpro SG90 Motor. This 2.5kg/cm torque means that the motor can pull a weight of 2.5kg when it is suspended at a distance of 1cm. So if you suspend the load at 0.5cm then the motor can pull a load of 5kg similarly if you suspend the load at 2cm then can pull only 1.25. Based on the load which you use in the project you can select the motor with proper torque. The below picture will illustrate the same.<strong> </strong></p>
+
+<p><img alt="Selecting a servo motor" data-entity-type="file" data-entity-uuid="f00ae6c7-63f6-43ee-9b8e-65669bc93f37" src="/sites/default/files/inline-images/Servo-motor-torque.png" /></p>
+
+<p>&nbsp;</p>
+
+<h3><strong>How to use a Servo Motor</strong></h3>
+
+<p>After selecting the right Servo motor for the project, comes the question how to use it. As we know there are three wires coming out of this motor. The description of the same is given on top of this page. To make this motor rotate, we have to power the motor with +5V using the Red and Brown wire and send PWM signals to the Orange colour wire. Hence we need something that could generate PWM signals to make this motor work, this something could be anything like a 555 Timer or other Microcontroller platforms like Arduino, PIC, ARM or even a microprocessor like Raspberry Pie. Now, how to control the direction of the motor? To understand that let us a look at the picture given in the datasheet.</p>
+
+<p><img alt="how to use servo motor" data-entity-type="file" data-entity-uuid="b866c9eb-71b3-499a-b2f3-1c31ea4dd1c1" src="/sites/default/files/inline-images/how-to-use-servo-motor.png" /></p>
+
+<p>From the picture we can understand that the PWM signal produced should have a frequency of 50Hz that is the PWM period should be 20ms. Out of which the On-Time can vary from 1ms to 2ms. So when the on-time is 1ms the motor will be in 0° and when 1.5ms the motor will be 90°, similarly when it is 2ms it will be 180°. So, by varying the on-time from 1ms to 2ms the motor can be controlled from 0° to 180°</p>
+
+<p>&nbsp;</p>
+
+<h3><strong>Applications</strong></h3>
+
+<ul>
+	<li>Used as actuators in many robots like Biped Robot, Hexapod, robotic arm etc..</li>
+	<li>Commonly used for steering system in RC toys</li>
+	<li>Robots where position control is required without feedback</li>
+	<li>Less weight hence used in multi DOF robots like humanoid robots</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h3><strong>SG90 Servo Motor Dimensions</strong></h3>
+
+<p><strong><img alt="Servo Motor Dimensions" data-entity-type="file" data-entity-uuid="ff2074d5-35df-433f-b92e-6fa83f0954cd" src="/sites/default/files/inline-images/servo-motor-dimensions.png" /></strong></p>
+      </div>
+      
+      <div class="ad970-wrapper" style="margin-top: 25px; display:flex; overflow:scroll; overflow-x:scroll; -webkit-overflow-scrolling: touch;">
+<!-- /21034905/billboard_3 -->
+<div id='div-gpt-ad-1721987993455-0' style='min-width: 970px; min-height: 250px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1721987993455-0'); });
+  </script>
+</div>
+</div>
+
+
+	  <!-- custom added to show datasheet -->     <!--  <div style="padding: 10px; border: 1px solid #C2C4C5;"> -->
+<center>
+<span style="font-size:20px;"><strong>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--node--field-component-datasheet--blog-post.html.twig
+   * field--node--field-component-datasheet.html.twig
+   * field--node--blog-post.html.twig
+   * field--field-component-datasheet.html.twig
+   * field--file.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+  <div class="field field--name-field-component-datasheet field--type-file field--label-above">
+    <div class="field__label">Component Datasheet</div>      <div class="field__item">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'file_link' -->
+<!-- BEGIN OUTPUT from 'core/modules/file/templates/file-link.html.twig' -->
+<span class="file file--mime-application-pdf file--application-pdf"><a href="https://components101.com/sites/default/files/component_datasheet/SG90%20Servo%20Motor%20Datasheet.pdf" target="_blank">SG90 Servo Motor Datasheet</a></span>
+
+<!-- END OUTPUT from 'core/modules/file/templates/file-link.html.twig' -->
+
+</div>  </div>
+<!-- END OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+
+</strong></span>
+</center>
+
+<!--</div> -->
+<script src="https://di.oemsecrets.com/loader/project.js"
+data-di-key="m84qvcrdmcer702546if4o746ru6kiytokfshn39zcvl898zzgj8fnjvlrm8oklc"
+data-di-project="article" data-di-term=SG90>
+</script>	
+      <div class="post-tags clearfix">
+	  <div class="content block-content">
+<div><div class="tags-list js-view-dom-id-ff96c674ec923312aca7eb3b0a461878855b595043911b46a04f592f71423738" style="font-size: 17px; font-weight: 400px; margin-left: -50px;">
+<div class="item-list">
+<ul>
+<div class="views-field views-field-name" style="margin-left: 10px;"><h3>Tags</h3><span class="field-content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--node--field-blog-tags--blog-post.html.twig
+   * field--node--field-blog-tags.html.twig
+   * field--node--blog-post.html.twig
+   * field--field-blog-tags.html.twig
+   * field--entity-reference.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+    <div class="field field--name-field-blog-tags field--type-entity-reference field--label-hidden field__items">        <div class="field__item"><a href="/tags/servo-motor" hreflang="en">Servo Motor</a></div>    </div>
+<!-- END OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+
+</span>
+		</ul>
+</div>
+</div>
+</div></div>
+      </div>  
+
+ 
+
+<h2 style="border-bottom: 1px solid #eeeeee; margin-top: 25px;">Related Post</h2>
+<div class="related-posts"> 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-4104019148699772"
+     data-ad-slot="4060781436"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		
+      </div>
+	  <br/>
+	  
+  <!-- showing views count - so commented   -->	
+ <!-- <h2 class="block-title">Comments</h2> -->
+    </div>
+
+  </div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--node--field-blog-comments--blog-post.html.twig
+   * field--node--field-blog-comments.html.twig
+   * field--node--blog-post.html.twig
+   * field--field-blog-comments.html.twig
+   x field--comment.html.twig
+   * field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/comment/templates/field--comment.html.twig' -->
+<section>
+</section>
+
+<!-- END OUTPUT from 'core/modules/comment/templates/field--comment.html.twig' -->
+
+
+  <br/><!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+#mce-responses{display:none;}
+	#mc_embed_signup{
+	clear: left;
+    margin-top: 20px;
+    background-color: #f8f9fa!important;
+    padding: 48px;
+    }
+    #mc_embed_signup_scroll{
+    	background: white;
+    	padding: 48px 16px;
+    }
+    #mc_embed_signup_scroll h3{
+	    font-weight: 500;
+	    margin: 0px 8px;
+	    text-align: center;
+	    font-size: 28px;
+	    color: #343a40!important;
+    }
+    #mc_embed_signup form .btn-primary{
+    	background-color: #0062cc;
+        border-color: #005cbf;
+        width: 96%;
+        margin: 0;
+    }
+     #mc_embed_signup form .btn-primary:hover{
+    	color:#ffffffd1;
+    	background-color: #0062cc;
+        border-color: #005cbf;
+    }
+    .bottom_contn{text-align: center !important;}
+}
+</style>
+
+<div id="mc_embed_signup">
+	<form action="https://components101.us19.list-manage.com/subscribe/post?u=7831027c963ad1778e5688a40&amp;id=c04f684e84" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		<div id="mc_embed_signup_scroll">
+			<h3>Join 20K+subscribers</h3>
+			<p style="text-align: center; margin:16px 24px;color: #6c757d!important;font-size: 20px; ">We will never spam you.</p>
+			<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+			<div class="mc-field-group">
+				<label for="mce-EMAIL" class="sr-only">Email Address  <span class="asterisk">*</span>
+				</label>
+				<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter Your Email Address">
+			</div>
+			<div class="mc-field-group">
+				<label for="mce-FNAME" class="sr-only">Name </label>
+				<input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="Enter Your Name">
+			</div>
+			<div id="mce-responses" class="clear">
+				<div class="response" id="mce-error-response" style="display:none"></div>
+				<div class="response" id="mce-success-response" style="display:none"></div>
+			</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+			<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7831027c963ad1778e5688a40_c04f684e84" tabindex="-1" value=""></div>
+			<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-primary"></div>
+			<p class="bottom_contn">Be a part of our ever growing community.</p>
+		</div>
+	</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+
+</article>
+
+<!-- End Display article for detail page -->
+
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/node/node--blog_post.html.twig' -->
+
+
+    </div></div>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+
+
+  </div>
+<!-- END OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+
+					</div>			</div>
+
+		</div>
+
+		<!-- Sidebar Left -->		<!-- End Sidebar Left -->
+
+		<!-- Sidebar Right -->	 
+
+
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 sidebar sidebar-right">
+				<div class="sidebar-inner">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--sidebar-right.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+  <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--views-block---re-sidebar-widgets-block-on-sidebar-fashion-news-2.html.twig
+   * block--views-block---re-sidebar-widgets-block-on-sidebar-fashion-news.html.twig
+   * block--views-block.html.twig
+   * block--views.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+<div class="views-element-container block block-views block-views-block-re-sidebar-widgets-block-on-sidebar-fashion-news">    <h2 class="block-title"><span></span></h2>    <div class="content block-content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'container' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/container.html.twig' -->
+<div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view.html.twig' -->
+<div class="js-view-dom-id-a1454fc19bf419bdb600fa5d95b60036608e20724fb46c6067a5371fbab7dbae">    <header><span><img src="/sites/default/files/Digikey-featuredProducts.jpg" /></span>
+
+<div id="div-gpt-ad-1577889031982-0">
+  <script>
+<!--//--><![CDATA[// ><!--
+
+<!--//--><![CDATA[// ><!--
+
+    googletag.cmd.push(function() { googletag.display("div-gpt-ad-1577889031982-0"); });
+  
+//--><!]]]]><![CDATA[>
+
+//--><!]]>
+</script>
+</div>
+    </header>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_gvagrid' -->
+<!-- BEGIN OUTPUT from 'modules/gavias_view/templates/views-view-gvagrid.html.twig' -->
+<div class="gva-view-grid">
+  <div class="gva-view-grid-inner lg-block-grid-1 md-block-grid-1 sm-block-grid-1 xs-block-grid-1">        <div class="item-columns">
+          <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<div class="post-block small">
+      <div class="post-image"><a href="https://bit.ly/3ZwusHe" target="_blank">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="" width="100" height="98" alt="IoT/ISM Band Component Development Kit" typeof="Image" data-src="/sites/default/files/styles/digikey/public/advertisements/New%20Project%20-%202024-11-29T174929.473.jpg?itok=OVh07dul" class="unveil-image" />
+
+
+
+
+
+
+
+
+
+
+</a>
+      </div>
+      <div class="post-content">
+             <div class="post-title"><a href="https://bit.ly/3ZwusHe" target="_blank">IoT/ISM Band Component Development Kit</a> </div>
+              <div class="post-meta"><span class="post-created "></span></div>
+             <div class="post-body"><p>Johanson's complete development kit for RF chipsets and applications solutions</p></div>
+       </div>
+</div>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+</div>
+        </div>        <div class="item-columns">
+          <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<div class="post-block small">
+      <div class="post-image"><a href="https://bit.ly/3C1e1t0" target="_blank">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="" width="100" height="70" alt="ECX-1637B Low-Aging Compact Crystal" typeof="Image" data-src="/sites/default/files/styles/digikey/public/advertisements/New%20Project%20-%202024-11-29T174748.117.jpg?itok=775A8PRW" class="unveil-image" />
+
+
+
+
+
+
+
+
+
+
+</a>
+      </div>
+      <div class="post-content">
+             <div class="post-title"><a href="https://bit.ly/3C1e1t0" target="_blank">ECX-1637B Low-Aging Compact Crystal</a> </div>
+              <div class="post-meta"><span class="post-created "></span></div>
+             <div class="post-body"><p>The ECX-1637B is a low-aging crystal. This component is ideal for wireless and IoT applications.</p></div>
+       </div>
+</div>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+</div>
+        </div>        <div class="item-columns">
+          <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<div class="post-block small">
+      <div class="post-image"><a href="https://bit.ly/40mBezS" target="_blank">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="" width="100" height="100" alt="EcoCable® Mini Cable" typeof="Image" data-src="/sites/default/files/styles/digikey/public/advertisements/New%20Project%20-%202024-11-29T174611.348.jpg?itok=jea2l58O" class="unveil-image" />
+
+
+
+
+
+
+
+
+
+
+</a>
+      </div>
+      <div class="post-content">
+             <div class="post-title"><a href="https://bit.ly/40mBezS" target="_blank">EcoCable® Mini Cable</a> </div>
+              <div class="post-meta"><span class="post-created "></span></div>
+             <div class="post-body"><p>AlphaWire introduces the EcoCable Mini Cable: the smallest solution to your biggest cable problems</p></div>
+       </div>
+</div>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+</div>
+        </div>        <div class="item-columns">
+          <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<div class="post-block small">
+      <div class="post-image"><a href="https://bit.ly/3UrelHQ" target="_blank">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="" width="100" height="68" alt="ACS71240 Current Sensors" typeof="Image" data-src="/sites/default/files/styles/digikey/public/advertisements/New%20Project%20-%202024-11-29T173746.311.jpg?itok=XIqzmjtH" class="unveil-image" />
+
+
+
+
+
+
+
+
+
+
+</a>
+      </div>
+      <div class="post-content">
+             <div class="post-title"><a href="https://bit.ly/3UrelHQ" target="_blank">ACS71240 Current Sensors</a> </div>
+              <div class="post-meta"><span class="post-created "></span></div>
+             <div class="post-body"><p>The ACS71240 is designed to replace shunt resistors in applications that require small size.</p></div>
+       </div>
+</div>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+</div>
+        </div>        <div class="item-columns">
+          <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<div class="post-block small">
+      <div class="post-image"><a href="https://bit.ly/4c4sMHK" target="_blank">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="" width="67" height="100" alt="1555F Series IP68 Wall Mounted Enclosures for Harsh Environments" typeof="Image" data-src="/sites/default/files/styles/digikey/public/advertisements/New%20Project%20-%202024-11-29T174244.642.jpg?itok=pPwA2AGB" class="unveil-image" />
+
+
+
+
+
+
+
+
+
+
+</a>
+      </div>
+      <div class="post-content">
+             <div class="post-title"><a href="https://bit.ly/4c4sMHK" target="_blank">1555F Series IP68 Wall Mounted Enclosures for Harsh Environments</a> </div>
+              <div class="post-meta"><span class="post-created "></span></div>
+             <div class="post-body"><p>1555F Series enclosures have several innovative features that provide excellent functionality</p></div>
+       </div>
+</div>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+</div>
+        </div>        <div class="item-columns">
+          <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<div class="post-block small">
+      <div class="post-image"><a href="https://bit.ly/3VhS53x" target="_blank">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="" width="100" height="42" alt="PCAL97xx High-Performance GPIO Expanders" typeof="Image" data-src="/sites/default/files/styles/digikey/public/advertisements/New%20Project%20-%202024-11-29T173544.062.jpg?itok=8epDPsGR" class="unveil-image" />
+
+
+
+
+
+
+
+
+
+
+</a>
+      </div>
+      <div class="post-content">
+             <div class="post-title"><a href="https://bit.ly/3VhS53x" target="_blank">PCAL97xx High-Performance GPIO Expanders</a> </div>
+              <div class="post-meta"><span class="post-created "></span></div>
+             <div class="post-body"><p>22-bit and 14-bit GPIO expanders with SPI interface and integrated voltage level translators</p></div>
+       </div>
+</div>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+</div>
+        </div>        <div class="item-columns">
+          <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<div class="post-block small">
+      <div class="post-image"><a href="https://bit.ly/4eM9wQI" target="_blank">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="" width="100" height="64" alt="InnoSwitch3-EP" typeof="Image" data-src="/sites/default/files/styles/digikey/public/advertisements/New%20Project%20-%202024-11-29T173416.296.jpg?itok=2yBPzoUy" class="unveil-image" />
+
+
+
+
+
+
+
+
+
+
+</a>
+      </div>
+      <div class="post-content">
+             <div class="post-title"><a href="https://bit.ly/4eM9wQI" target="_blank">InnoSwitch3-EP</a> </div>
+              <div class="post-meta"><span class="post-created "></span></div>
+             <div class="post-body"><p>InnoSwitch3-EP family of off-line CV/CC QR flyback switcher ICs feature 900 V PowiGaN switches.</p></div>
+       </div>
+</div>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+</div>
+        </div>        <div class="item-columns">
+          <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<div class="post-block small">
+      <div class="post-image"><a href="https://bit.ly/3B4NACA" target="_blank">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="" width="100" height="94" alt="AIROC™ CYW55513/2/1 Wi-Fi and Bluetooth® 5.4 Combo Devices" typeof="Image" data-src="/sites/default/files/styles/digikey/public/advertisements/New%20Project%20-%202024-11-29T172820.977.jpg?itok=kzL1tYW-" class="unveil-image" />
+
+
+
+
+
+
+
+
+
+
+</a>
+      </div>
+      <div class="post-content">
+             <div class="post-title"><a href="https://bit.ly/3B4NACA" target="_blank">AIROC™ CYW55513/2/1 Wi-Fi and Bluetooth® 5.4 Combo Devices</a> </div>
+              <div class="post-meta"><span class="post-created "></span></div>
+             <div class="post-body"><p>Industry leading RF performance for low-power IoT, smart home, medical &amp; wearables</p></div>
+       </div>
+</div>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+</div>
+        </div>  </div></div>
+<!-- END OUTPUT from 'modules/gavias_view/templates/views-view-gvagrid.html.twig' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view.html.twig' -->
+
+</div>
+
+<!-- END OUTPUT from 'core/modules/system/templates/container.html.twig' -->
+
+
+    </div></div>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+
+
+  </div>
+<!-- END OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+		<div class="partstack" style="border: 1px solid rgba(0, 0, 0, 0.1); padding: 15px 10px 10px;"><center><a href="https://bit.ly/4fDK5BD" target="_blank" rel="nofollow"><img src="https://components101.com/sites/default/files/arduino-project-cd.png" ></a></center></div>
+
+				</div>
+			</div>		<!-- End Sidebar Right -->
+		
+	</div>
+</div>
+
+			</div>
+		</div>			
+	</div> 
+<center>
+<div class="ad970-wrapper" style="margin-top: 25px; display:flex;">
+<!-- /21034905/c101_billboard_bottom -->
+<div id='div-gpt-ad-1627302449723-0' style='min-width: 970px; min-height: 250px; margin: 0 auto 30px auto;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1627302449723-0'); });
+  </script>
+</div>
+</div> </center>
+<script type="text/javascript">
+
+	console.log(window.location.href);
+	if ($('#div-gpt-ad-1625818544655-0').length > 0 && $('#div-gpt-ad-1625818497950-0').length > 0 ) {
+	if(document.getElementById('div-gpt-ad-1625818544655-0').style['display']!='none' && $('#div-gpt-ad-1625818544655-0').attr('data-google-query-id')  && document.getElementById('div-gpt-ad-1625818497950-0').style['display']!='none' && $('#div-gpt-ad-1625818497950-0').attr('data-google-query-id')){
+		$('#div-gpt-ad-1625818497950-0, #div-gpt-ad-1625818544655-0').show();
+	}
+	}
+	
+	if ($('#div-gpt-ad-1640869785778-0').length > 0 && $('#div-gpt-ad-1640869848371-0').length > 0 ) {
+	if(document.getElementById('div-gpt-ad-1640869785778-0').style['display']!='none' && $('#div-gpt-ad-1640869785778-0').attr('data-google-query-id')  && document.getElementById('div-gpt-ad-1640869848371-0').style['display']!='none' && $('#div-gpt-ad-1640869848371-0').attr('data-google-query-id')){
+		$('#div-gpt-ad-1640869785778-0, #div-gpt-ad-1640869848371-0').show();
+	}
+	}
+		if(window.location.href == "https://components101.com/"){
+	var distanceFromTop_3 = 60;
+	$('#div-gpt-ad-1625818544655-0').css({"position":"fixed","top":"100px"});
+	$('#div-gpt-ad-1625818497950-0').css({"position":"fixed","top":"91px"});
+	
+	$('#div-gpt-ad-1640869785778-0').css({"position":"fixed","top":"91px"});
+	$('#div-gpt-ad-1640869848371-0').css({"position":"fixed","top":"100px"});
+	}
+	else{
+	var distanceFromTop_3 = 60;
+	$('#div-gpt-ad-1625818544655-0').css({"position":"fixed","top":"100px"});
+	$('#div-gpt-ad-1625818497950-0').css({"position":"fixed","top":"91px"});
+	
+	$('#div-gpt-ad-1640869785778-0').css({"position":"fixed","top":"91px"});
+	$('#div-gpt-ad-1640869848371-0').css({"position":"fixed","top":"100px"});
+	}
+
+ 	$(window).scroll(function() {
+    var distanceFromTop_4 = $(this).scrollTop();
+	
+	var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
+	var distanceFromTop_6 = distanceFromTop_3- $(window).scrollTop();
+	var distanceFromTop_1 = $('header').offset().top;
+	console.log(scrollBottom );
+	distanceFromTop_7 = scrollBottom-400;
+
+    if (distanceFromTop_4 > distanceFromTop_3  && scrollBottom > 400 ) { 
+			$('#div-gpt-ad-1625818544655-0').css({"position":"fixed","top":"60px"});
+			$('#div-gpt-ad-1625818497950-0').css({"position":"fixed","top":"51px"});
+			
+			$('#div-gpt-ad-1640869785778-0').css({"position":"fixed","top":"51px"});
+			$('#div-gpt-ad-1640869848371-0').css({"position":"fixed","top":"60px"});
+    } 
+	else if(scrollBottom < 400) {
+        	$('#div-gpt-ad-1625818497950-0, #div-gpt-ad-1625818544655-0').css({"position":"fixed","top":distanceFromTop_7+"px"});
+			$('#div-gpt-ad-1640869785778-0, #div-gpt-ad-1640869848371-0').css({"position":"fixed","top":distanceFromTop_7+"px"});
+    }
+	else  {
+        	$('#div-gpt-ad-1625818544655-0').css({"position":"fixed","top":"100px"});
+			$('#div-gpt-ad-1625818497950-0').css({"position":"fixed","top":"91px"});
+			
+        	$('#div-gpt-ad-1640869785778-0').css({"position":"fixed","top":"91px"});
+			$('#div-gpt-ad-1640869848371-0').css({"position":"fixed","top":"100px"});
+    }
+  });
+$("document").ready(function(){
+	$(".title.ad.full.clickable span").css({"font-size":"14.4px !important", "color": "#343a40 !important"});
+});
+$( ".sidebar-latest hr" ).last().css("display","none");
+</script>
+<style>
+@media only screen and (max-width:1360px){ 
+   #div-gpt-ad-1625818497950-0, #div-gpt-ad-1625818544655-0{display:none;}
+   #div-gpt-ad-1640869785778-0, #div-gpt-ad-1640869848371-0{display:none;}
+}
+</style>
+<footer id="footer" class="footer">   
+   <div class="footer-center">
+      <div class="container">      
+         <div class="row">                <div class="footer-4col col-lg-3 col-md-3 col-md-6 col-xs-12 column">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--footer-first.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+  <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--about-footer.html.twig
+   * block--block-content--7c942d4c-223c-4814-a192-a118c3f7e4b8.html.twig
+   * block--block-content.html.twig
+   * block--block-content.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+<div class="block block-block-content block-block-content7c942d4c-223c-4814-a192-a118c3f7e4b8 no-title">    <div class="content block-content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--block-content--body--basic.html.twig
+   * field--block-content--body.html.twig
+   * field--block-content--basic.html.twig
+   * field--body.html.twig
+   * field--text-with-summary.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+      <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><p> </p>
+
+<p><img alt="Components101 logo" data-entity-type="file" data-entity-uuid="9e1f3702-eee6-4330-aa21-e663f229af2c" src="/sites/default/files/inline-images/components101_logo_1.png" /></p>
+
+<p>Components101 is a resource dedicated for electronics design engineers, covering product news, analysis and articles on latest electronics components. </p></div>
+<!-- END OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+
+
+    </div></div>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+
+
+  </div>
+<!-- END OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+
+                </div>                <div class="footer-4col col-lg-3 col-md-3 col-md-6 col-xs-12 column">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--footer-second.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+  <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--importantlinks.html.twig
+   * block--block-content--c3c2b69a-960c-4195-a3e0-cc2e7101eb4f.html.twig
+   * block--block-content.html.twig
+   * block--block-content.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+<div class="footeroneCD block block-block-content block-block-contentc3c2b69a-960c-4195-a3e0-cc2e7101eb4f">    <h2 class="block-title"><span>Important Links</span></h2>    <div class="content block-content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--block-content--body--basic.html.twig
+   * field--block-content--body.html.twig
+   * field--block-content--basic.html.twig
+   * field--body.html.twig
+   * field--text-with-summary.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+      <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><div>
+<div class="block block-block-content block-block-contentf68ff84d-6af0-4c49-8b85-ae338addc541 no-title" id="block-gavias-kama-linkfooter">
+<div class="content block-content">
+
+<ul class="menu">
+	<li><a href="/contact">Contact</a></li>
+	<li><a href="/contact/advertise">Advertise</a></li>
+	<li><a href="/privacy-policy">Privacy Policy</a></li>
+	<li><a href="/cookie-policy">Cookie Policy</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+<!-- END OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+
+
+    </div></div>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+
+
+  </div>
+<!-- END OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+
+                </div>                <div class="footer-4col col-lg-3 col-md-3 col-md-6 col-xs-12 column">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--footer-third.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+  <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--populartags.html.twig
+   * block--block-content--dc68a32f-1e89-4200-b8a5-af8585df3660.html.twig
+   * block--block-content.html.twig
+   * block--block-content.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+<div class="block block-block-content block-block-contentdc68a32f-1e89-4200-b8a5-af8585df3660">    <h2 class="block-title"><span>POPULAR TAGS</span></h2>    <div class="content block-content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--block-content--body--basic.html.twig
+   * field--block-content--body.html.twig
+   * field--block-content--basic.html.twig
+   * field--body.html.twig
+   * field--text-with-summary.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+      <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="content block-content">
+<ul class="menu">
+              <li><a href="https://components101.com/automotive-electronics">Automotive</a></li>
+              <li><a href="https://components101.com/iot-internet-of-things">IoT</a></li>
+              <li><a href="https://components101.com/audio-electronics">Audio</a></li>
+              <li><a href="https://components101.com/medical-electronics">Medical</a></li>
+<li><a href="https://components101.com/industrial">Industrial</a></li>
+            </ul>
+			</div></div>
+<!-- END OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+
+
+    </div></div>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+
+
+  </div>
+<!-- END OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+
+                </div>                <div class="footer-4col col-lg-3 col-md-3 col-md-6 col-xs-12 column">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--footer-four.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+  <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--a.html.twig
+   * block--block-content--1e45fdd8-b688-4d62-bef3-2974f567fdaa.html.twig
+   * block--block-content.html.twig
+   * block--block-content.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+<div class="footerfourCD block block-block-content block-block-content1e45fdd8-b688-4d62-bef3-2974f567fdaa no-title">    <div class="content block-content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--block-content--body--basic.html.twig
+   * field--block-content--body.html.twig
+   * field--block-content--basic.html.twig
+   * field--body.html.twig
+   * field--text-with-summary.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+      <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item">			<div class="content block-content">
+<ul class="menu">
+              <li><a href="https://components101.com/wearables">Wearable</a></li>
+              <li><a href="https://components101.com/telecom">Telecom/5G</a></li>
+              <li><a href="https://components101.com/home-automation">Home Automation</a></li>
+              <li><a href="https://components101.com/electric-vehicles">Electric vehicles</a></li>
+<li><a href="https://components101.com/artificial-intelligence">Artificial Intelligence</a></li>
+            </ul>
+			</div></div>
+<!-- END OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+
+
+    </div></div>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+
+
+  </div>
+<!-- END OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+
+                </div>         </div>   
+      </div>
+   </div>   <div class="copyright">
+      <div class="container">
+        <div class="copyright-inner">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--copyright.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+  <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--copyright-message.html.twig
+   * block--block-content--dcc92698-f200-4c2e-af9b-c5fa06bf60bd.html.twig
+   * block--block-content.html.twig
+   * block--block-content.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+<div class="block block-block-content block-block-contentdcc92698-f200-4c2e-af9b-c5fa06bf60bd no-title">    <div class="content block-content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--block-content--body--basic.html.twig
+   * field--block-content--body.html.twig
+   * field--block-content--basic.html.twig
+   * field--body.html.twig
+   * field--text-with-summary.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+      <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><div>Copyright 2023 © Components101. All rights reserved</div></div>
+<!-- END OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+
+
+    </div></div>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+
+
+  </div>
+<!-- END OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+
+        </div>   
+      </div>   
+   </div> <div class="return-top default hidden-xs"><i class="fa fa-angle-up"></i></div>
+ <div id="gva-popup-ajax" class="clearfix"><div class="pajax-content"><a href="javascript:void(0);" class="btn-close"><i class="fa fa-times"></i></a><div class="gva-popup-ajax-content clearfix"></div></div></div>
+</footer>
+
+
+	
+</div>
+
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/page/page.html.twig' -->
+
+
+  </div>
+<!-- END OUTPUT from 'core/modules/system/templates/off-canvas-page-wrapper.html.twig' -->
+
+
+    <script src="/sites/default/files/js/js_pEnOb0F-RoDjy1CaCjxyYJgSSxDuYjiWI55v76-UTLY.js"></script>
+	<script async>(function(s,u,m,o,j,v){j=u.createElement(m);v=u.getElementsByTagName(m)[0];j.async=1;j.src=o;j.dataset.sumoSiteId='d83d4af71f6bb49c44af760187383f433b919a2e9b0099c84a51c04ef4126e82';v.parentNode.insertBefore(j,v)})(window,document,'script','//load.sumo.com/');</script>
+	
+  </body>
+</html>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/page/html.html.twig' -->
+
